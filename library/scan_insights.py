@@ -7,7 +7,7 @@ DOCUMENTATION = '''
 module: scan_insights
 short_description: Return insights id as fact data
 description:
-    - Inspects the /etc/redhat-access-insights/machine-id file for insights id and returns the found id as fact data
+    - Inspects the /etc/insights-client/machine-id file for insights id and returns the found id as fact data
 version_added: "2.3"
 options:
 requirements: [ ]
@@ -24,7 +24,7 @@ EXAMPLES = '''
 '''
 
 
-INSIGHTS_SYSTEM_ID_FILE='/etc/redhat-access-insights/machine-id'
+INSIGHTS_SYSTEM_ID_FILE='/etc/insights-client/machine-id'
 
 
 def get_system_id(filname):
